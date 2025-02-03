@@ -5,12 +5,11 @@ import {
     ServiceType,
 } from "@elizaos/core";
 import { Connection, Keypair } from "@solana/web3.js";
-import { AithraManager } from "agent-sdk";
+import { AithraManager, type TrackInfo } from "sdk-aithra-toolkit";
 import bs58 from "bs58";
 import * as fs from "fs";
 import * as os from "os";
 import * as path from "path";
-import { TrackInfo } from "../types";
 
 export class AithraService extends Service {
     private manager: AithraManager;
